@@ -1,0 +1,51 @@
+// Helpers functions or classes
+
+@mixin onlyDesktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin WXDADisplay {
+  @media screen and (max-width: 1366px) {
+    @content;
+  }
+}
+
+@mixin tabletBreakpoints {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin smallest {
+  @media (max-width: 374px) {
+    @content;
+  }
+}
+
+@mixin smartPhoneBreakpoints {
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    @content;
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    @content;
+  }
+
+  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    @content;
+  }
+
+  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    @content;
+  }
+}
+

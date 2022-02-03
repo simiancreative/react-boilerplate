@@ -1,0 +1,17 @@
+.header {
+  display: grid;
+  grid-template-areas: 'title close';
+  grid-template-columns: 1fr 18px;
+  border-bottom: 1px solid #364c80;
+  margin-bottom: 24px;
+}
+
+.title {
+  grid-area: title;
+}
+
+.close {
+  grid-area: close;
+  justify-self: end;
+  cursor: pointer;
+}

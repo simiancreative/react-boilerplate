@@ -1,0 +1,53 @@
+@import '../../assets/styles/breakpoints.scss';
+
+.parent {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+
+.logo {
+  display: block;
+  width: 307px;
+  height: 88px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+
+.wrap {
+  width: 400px;
+  padding: 30px;
+  margin: auto;
+}
+
+.content {}
+
+@include smartPhoneBreakpoints {
+  .wrap {
+    width: 100vw;
+  }
+  .logo {
+    width: 65vw;
+  }
+  .card-form {
+    width: 75vw;
+  }
+}
+
+@include smallest {
+  .wrap {
+    width: 100vw;
+  }
+  .logo {
+    width: 65vw;
+  }
+  .card-form {
+    width: 85vw;
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../assets/styles/breakpoints.scss';
+
+.parent {
+  position: relative;
+  margin: 0 auto;
+  top: 0;
+}
+
+@include onlyDesktop {
+  .parent {
+    max-width: 700px;
+  }
+}

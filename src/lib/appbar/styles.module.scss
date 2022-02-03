@@ -1,0 +1,30 @@
+.appbarwrapper {
+  position: relative;
+  z-index: 1;
+}
+
+input {
+  color: #edf1ff9e !important;
+}
+
+.appbar {
+  // background: none !important;
+  // background:#183244 !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #1a3446;
+
+  & > div {
+    justify-content: space-between;
+  }
+}
+
+.control {
+  display: grid;
+  // grid-template-columns: 40px 20px;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 32px;
+}

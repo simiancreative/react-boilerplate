@@ -1,0 +1,68 @@
+html {
+  // removing these, it hid the white background but caused funky hidden ui in
+  // ios
+  /* overflow: auto; */
+  /* height: 100%; */
+  background: rgb(69, 74, 161);
+  background: linear-gradient(120deg, #1f4452, #01021d);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  line-height: 150%;
+  color: #d6dcdc;
+  margin: 0;
+  padding: 0;
+
+  min-height: 100vh;
+  // removing these, it hid the white background but caused funky hidden ui in
+  // ios
+  /* height: 100%; */
+  /* overflow: auto; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #00e5a4;
+}
+
+a {
+  color: #00e5a3;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.centered {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.MuiFormHelperText-contained.Mui-error {
+  position: absolute;
+  bottom: -20px;
+  left: -14px;
+}
+
+button.MuiButtonBase-root.MuiButton-root {
+  padding: 10px;
+}
+
+input:-webkit-autofill,
+.MuiTextField-root .MuiOutlinedInput-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 100px #353766 inset;
+}

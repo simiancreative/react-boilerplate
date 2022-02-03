@@ -1,0 +1,29 @@
+@import '../../assets/styles/variables.scss';
+
+.status {
+  border-bottom: 1px solid $mid-green;
+  display: grid;
+  grid-template-areas:
+    'banner banner'
+    'name info';
+}
+
+.name {
+  padding: 15px;
+}
+
+.info {
+  @extend .name;
+  text-align: right;
+}
+
+.banner {
+  max-height: 112px;
+  overflow: hidden;
+  grid-area: banner;
+
+  img {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+}
